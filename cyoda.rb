@@ -5,21 +5,21 @@
 class Cyoda < Formula
   desc "Lightweight Go EDBMS — digital twin of the Cyoda platform"
   homepage "https://github.com/cyoda/cyoda-go"
-  version "0.8.3"
+  version "0.8.4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Cyoda/cyoda-go/releases/download/v0.8.3/cyoda_0.8.3_darwin_amd64.tar.gz"
-      sha256 "13c257f60e5409b7aa23c15e820a0d2b98ae26675ce40bf3a818c7374a32723a"
+      url "https://github.com/Cyoda/cyoda-go/releases/download/v0.8.4/cyoda_0.8.4_darwin_amd64.tar.gz"
+      sha256 "17db5fd0485d756fb189281261ce1c85316571a78537cf5a2988adb865ce41b2"
 
       define_method(:install) do
         bin.install "cyoda"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Cyoda/cyoda-go/releases/download/v0.8.3/cyoda_0.8.3_darwin_arm64.tar.gz"
-      sha256 "7191ef1753efbbc0895e69c8f9248a7dcf370c3773904b9cea3fd4a4346f3f7d"
+      url "https://github.com/Cyoda/cyoda-go/releases/download/v0.8.4/cyoda_0.8.4_darwin_arm64.tar.gz"
+      sha256 "3ad064b6d194f339c7533bccfb4eb2abe02ad2999beba06d5bbf534b30da235d"
 
       define_method(:install) do
         bin.install "cyoda"
@@ -29,15 +29,15 @@ class Cyoda < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Cyoda/cyoda-go/releases/download/v0.8.3/cyoda_0.8.3_linux_amd64.tar.gz"
-      sha256 "34e6ac552f0bd9ee6943f5fa3e8071ce2a60611bedddc9246556096030819dd8"
+      url "https://github.com/Cyoda/cyoda-go/releases/download/v0.8.4/cyoda_0.8.4_linux_amd64.tar.gz"
+      sha256 "40089d3e6c99c5a7de108f627d98d8bc012f57b6582f7a48992e253503e86e3e"
       define_method(:install) do
         bin.install "cyoda"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Cyoda/cyoda-go/releases/download/v0.8.3/cyoda_0.8.3_linux_arm64.tar.gz"
-      sha256 "eff346c14c068d40d802175e13014d764d53a0eb1ee2379ba0ab27e18101d847"
+      url "https://github.com/Cyoda/cyoda-go/releases/download/v0.8.4/cyoda_0.8.4_linux_arm64.tar.gz"
+      sha256 "e838c2f8877a06b757db1701ff5cd3d203a1fecc7cc5eb74a13d641af2eda7b2"
       define_method(:install) do
         bin.install "cyoda"
       end
